@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #5e4aba;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color:#5e4aba;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+nav a {
+    font-size: 18px;
+    font-weight: 450;
+    text-decoration: none;
+    color: white;
+}  
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+.profile {
+    text-align: center;
+}
+
+.image {
+    width: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #F0FFF0;
+  }
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #5e4aba;
+    background-image: url("../image/water.webp") ;
+    text-align: center;
+    color: #ffffff;;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}    
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #3b0052;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}    
+
+header {
+    display: inline;
+}
+
+ul a {
+    font-size: 18px;
+    font-weight: 450;
+    text-decoration: none;
+}
+
+ul a:hover {
+    font-weight: bold;
+}
+
+img {
+    width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
+  
